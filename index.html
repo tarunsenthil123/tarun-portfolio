@@ -2,236 +2,161 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Tarun Senthil's personal portfolio website." />
-  <title>Tarun Senthil | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tarun Senthil | ML, Product & Analytics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="#home">Tarun<span>.</span></a>
-
-    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="logo">Tarun<span>.</span></div>
 
     <nav class="nav" id="nav">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="header-cta" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+    <a href="https://github.com/tarunsenthil123" target="_blank" rel="noopener" class="header-cta">GitHub</a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <main>
-    <section class="hero section" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">COMPUTER ENGINEERING + BUSINESS</p>
-        <h1>Hi, I'm <span>Tarun.</span><br>I build things with technology.</h1>
-        <p class="hero-text">
-          I'm a Computer Engineering student at the University of Maryland with a minor in Business, focused on machine learning, neurotechnology, data pipelines, and computational research.
-        </p>
+    <section id="hero" class="hero">
+      <div>
+        <p class="eyebrow">ML &middot; PRODUCT &middot; ANALYTICS</p>
+        <h1>Hi, I'm <span>Tarun Senthil</span>.</h1>
 
         <div class="hero-actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn secondary" href="#contact">Contact Me</a>
+          <a href="https://drive.google.com/file/d/1QRPbJsclGbS0YBYoLhbTc5mosU3Pae9X/view?usp=sharing" target="_blank" rel="noopener" class="btn primary" id="resumeLink">View Resume</a>
+          <a href="#contact" class="btn secondary">Get in Touch</a>
         </div>
 
         <div class="social-row">
-          <a href="https://www.linkedin.com/in/tarun-senthil-76221a268/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="#" target="_blank" rel="noreferrer">Resume ↗</a>
+          <a href="https://github.com/tarunsenthil123" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/tarun-senthil-76221a268/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:tarunsenthil77@gmail.com">Email</a>
         </div>
       </div>
 
-      <div class="hero-card" aria-hidden="true">
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
+      <div class="hero-card">
         <div class="code-card">
-          <div class="code-top">
-            <span></span><span></span><span></span>
-          </div>
-          <pre><code><span class="muted">const</span> tarun = {
-  interests: [
-    "software",
-    "machine learning",
-    "research"
+          <div class="code-top"><span></span><span></span><span></span></div>
+          <pre><span class="muted">const</span> tarun = {
+  <span class="key">interests</span>: [
+    <span class="str">"ML"</span>,
+    <span class="str">"Product"</span>,
+    <span class="str">"Analytics"</span>,
+    <span class="str">"Research"</span>
   ],
-  status: <span class="accent">"building"</span>
-};</code></pre>
+  <span class="key">status</span>: <span class="accent">"building + recruiting"</span>
+};</pre>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="section-heading">
-        <p class="eyebrow">ABOUT</p>
-        <h2>A little about me</h2>
-      </div>
-
+    <section id="about" class="section">
+      <h2 class="big-heading">About</h2>
       <div class="about-grid">
         <div class="about-copy">
           <p>
-            I'm studying Computer Engineering at the University of Maryland with a minor in Business. My work spans machine learning, neurotechnology, data analysis, and computational research.
+           I’m a Computer Engineering and Business student at the University of Maryland interested in using technology to solve problems 
+           that matter, especially across machine learning, product, and analytics. I enjoy working through complex problems, digging into 
+           data, and building solutions that are both technically strong and genuinely useful.
           </p>
           <p>
-            I currently work on NIH-funded neurotechnology research at the National Center for Adaptive Neurotechnologies, where I build Python pipelines and machine learning workflows for neural and physiological data.
+            I’m currently exploring opportunities across ML, product, and analytics and would love to connect. 
+            If you think I’d be a good fit for your team, have an opportunity you’d like to share, 
+            or just want to chat, feel free to reach out.
           </p>
         </div>
-
         <div class="skills-card">
           <h3>Skills</h3>
+          <p class="skills-caption"></p>
           <div class="chips">
             <span>Python</span>
-            <span>Java</span>
-            <span>MATLAB</span>
-            <span>SQL</span>
-            <span>PyTorch</span>
-            <span>Scikit-learn</span>
-            <span>Pandas</span>
-            <span>NumPy</span>
-            <span>Git</span>
-            <span>MySQL</span>
+
+<span>Machine Learning</span>
+
+<span>SQL</span>
+
+<span>Data Analysis</span>
+
+<span>Data Pipelines</span>
+
+<span>Product Strategy</span>
+
+<span>Stakeholder Communication</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="experience">
-      <div class="section-heading">
-        <p class="eyebrow">EXPERIENCE</p>
-        <h2>Things I've worked on</h2>
-      </div>
+    <section id="experience" class="section">
+      <h2 class="big-heading">Experience</h2>
 
       <div class="timeline">
-        <article class="experience-card">
+
+        <div class="experience-card">
           <div>
-            <p class="card-kicker">JUNE 2026 — PRESENT</p>
+            <p class="card-kicker">Aug 2026 – Present</p>
+            <h3>Technology Analyst</h3>
+            <p class="org">Maryland Department of Aging</p>
+          </div>
+          <div>
+            <p>Developing Maryland Access Point.</p>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div>
+            <p class="card-kicker">NIH-Funded Research &middot; June 2026 – Present</p>
             <h3>Neurotechnology Machine Learning Engineer</h3>
-            <p class="org">National Center for Adaptive Neurotechnologies (NIH-funded)</p>
+            <p class="org">National Center for Adaptive Neurotechnologies</p>
           </div>
-          <p>
-            Engineered an end-to-end Python pipeline to decode and preprocess 923K+ rat EMG/ECoG trials, built compressed Zarr datasets, and trained unsupervised ML models to identify latent motor and cortical activity patterns.
-          </p>
-        </article>
-
-        <article class="experience-card">
           <div>
-            <p class="card-kicker">FEB 2024 — NOV 2024</p>
+            <p>Built a full data pipeline decoding 900K+ rat EMG and ECoG trials from raw
+              neural hardware formats, then trained unsupervised models (PCA, UMAP,
+              clustering) to find patterns in cortical and spinal activity.</p>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div>
+            <p class="card-kicker">Political Campaign &middot; Feb 2024 – Nov 2024</p>
             <h3>Field Director / Campaign Growth Intern</h3>
-            <p class="org">Alan Garza for Congress CD-29</p>
+            <p class="org">Alan Garza for Congress, CD-29</p>
           </div>
-          <p>
-            Directed field operations and built a Python data pipeline processing 17,000+ voter records to improve outreach targeting and campaign analytics.
-          </p>
-        </article>
-
-        <article class="experience-card">
           <div>
-            <p class="card-kicker">MAR 2024 — AUG 2024</p>
-            <h3>Economics Research Assistant</h3>
-            <p class="org">University of Pennsylvania</p>
+            <p>Ran field operations and voter outreach strategy for a congressional
+              campaign, and built a Python pipeline matching 17,000+ voter records to
+              sharpen targeting and cut wasted contacts.</p>
           </div>
-          <p>
-            Researched multilingual and multiethnic labor markets, analyzed survey data, and studied relationships between multilingualism, education, and workforce participation.
-          </p>
-        </article>
+        </div>
 
-        <article class="experience-card">
-          <div>
-            <p class="card-kicker">MAR 2024 — AUG 2024</p>
-            <h3>Econometrics Research Assistant</h3>
-            <p class="org">Harvard University</p>
-          </div>
-          <p>
-            Studied statistical attrition, bias, and methodological rigor across economics research and evaluated statistical assumptions used in empirical studies.
-          </p>
-        </article>
-
-        <article class="experience-card">
-          <div>
-            <p class="card-kicker">AUG 2023 — JUL 2024</p>
-            <h3>Data Analyst</h3>
-            <p class="org">Codology</p>
-          </div>
-          <p>
-            Analyzed social media performance data with Python and machine learning techniques to identify patterns and predict engagement outcomes.
-          </p>
-        </article>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="section-heading">
-        <p class="eyebrow">PROJECTS</p>
-        <h2>Selected work</h2>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-number">01</div>
-          <h3>H-Reflex Neural Data Pipeline</h3>
-          <p>
-            An NIH-funded neural data pipeline for decoding and preprocessing EMG/ECoG recordings, extracting features, and analyzing cortical and motor activity with machine learning.
-          </p>
-          <div class="project-tags">
-            <span>Python</span><span>ML</span><span>Data</span>
-          </div>
-          <div class="project-links">
-            <span class="coming-soon">Links coming soon</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-number">02</div>
-          <h3>FastAPI API Project</h3>
-          <p>
-            A backend learning project using FastAPI to build API endpoints, handle requests, and work with structured data models.
-          </p>
-          <div class="project-tags">
-            <span>FastAPI</span><span>Python</span><span>REST</span>
-          </div>
-          <div class="project-links">
-            <span class="coming-soon">Links coming soon</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-number">03</div>
-          <h3>Personal Portfolio</h3>
-          <p>
-            This responsive personal site, built from scratch using HTML, CSS, and JavaScript and deployed on Vercel.
-          </p>
-          <div class="project-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a href="#home">Live ↗</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
+    <section id="contact" class="section contact-section">
       <div>
-        <p class="eyebrow">CONTACT</p>
         <h2>Let's build something.</h2>
-        <p>If you'd like to talk about a project, opportunity, or idea, feel free to reach out.</p>
+        <p>Feel free to reach out via email, happy to talk ML, product, or analytics roles.</p>
       </div>
-      <a class="btn primary" href="mailto:tarunsenthil77@gmail.com">Email Me</a>
+      <div class="contact-actions">
+        <a href="mailto:tarunsenthil77@gmail.com" class="btn primary">Email Me</a>
+        <a href="https://www.linkedin.com/in/tarun-senthil-76221a268/" target="_blank" rel="noopener" class="btn secondary">LinkedIn</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <a class="logo" href="#home">Tarun<span>.</span></a>
-    <p>Built with HTML, CSS & JavaScript.</p>
-    <p>© <span id="year"></span> Tarun Senthil</p>
+    <div class="logo">Tarun.</div>
+    <p>© <span id="year"></span> Tarun Senthil. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
