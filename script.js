@@ -17,17 +17,12 @@ navLinks.forEach(link => {
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
-// Position the background pulse lines directly on top of the real grid
-// branches. Instead of approximating a pixel position and hoping it lands
-// on a grid line, this only ever picks from the actual list of valid grid
-// columns (x = 70, 210, 350, ...) and rows (y = 0, 140, 280, ...) that
-// exist on the current screen — so a trace can never miss the grid it's
-// supposed to follow.
+
 function layoutPulses() {
   const TILE = 140;
   const w = window.innerWidth;
   const h = window.innerHeight;
-  const localH = h + TILE; // matches .bg-pulses: top:-140px, height:calc(100% + 140px)
+  const localH = h + TILE; 
 
   function validPositions(max, offset) {
     const arr = [];
