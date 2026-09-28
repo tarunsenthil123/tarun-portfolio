@@ -399,6 +399,38 @@ button {
 }
 
 /* =========================
+   EXPERIENCE LOGOS
+========================= */
+
+.experience-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.experience-logo {
+  width: 76px;
+  height: 76px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.experience-logo img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.experience-info {
+  min-width: 0;
+}
+
+/* =========================
 
    EDUCATION
 
@@ -556,6 +588,10 @@ button {
 
   }
 
+  .experience-logo {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .contact-section {
